@@ -8,7 +8,6 @@
 // console.log(`Character at 0 is ${result}`)
 
 
-
 // function-expression and Higher order function
 // const exprezzo = function(){
 //     console.log("exprezooo")
@@ -16,7 +15,7 @@
 // function hof(shout){
 //     shout();
 // }
-
+//
 // hof(exprezzo);
 
 
