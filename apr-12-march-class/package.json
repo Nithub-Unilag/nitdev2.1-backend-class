@@ -1,0 +1,15 @@
+{
+  "name": "apr-12-march-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http.revision.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
