@@ -1,0 +1,4 @@
+const express = require('express'); //commonjs
+const StudentController = require('../controllers/student')
+
+const studentRouter = express.Router();

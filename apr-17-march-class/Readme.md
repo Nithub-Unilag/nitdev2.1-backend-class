@@ -11,7 +11,6 @@
   * firstname
   * lastname
   * email
-  * matricNo
 
 * Courses
   * title
@@ -45,10 +44,11 @@ Endpoints
 
 ***
 
+### APIS
 * **Restful APIs**
-* Graphql APIS
-* Rpc APIs
-* SOAP APIS
+* Graphql APIS: [link]()
+* Rpc APIs [link]()
+* SOAP APIS: [link]()
 
 * **Restful APIs**
   * REPRESENTATIONAL STATE TRANSFER
@@ -81,7 +81,7 @@ Endpoints
 
 * Requests:
 * url [Compulsory]  "localhost:3000/courses/10?showTutor=fals"
-  * query [compulsory] eg [show tutor]
+  * query [compulsory] eg [showTutor]
   * parameters [not compulsory] for example [10]
 * body [not compulsory]
 * headers [compulsory]
@@ -89,9 +89,8 @@ Endpoints
 
 ### REQUEST-RESPONSE-LIFECYCLE
 
-
 outside-world --> [Application] --> outside-world
-[request]     [middlewares/Handlers]   [response]
+[request]     [middlewares/Handlers/Interceptors]   [response]
 
 
 ***

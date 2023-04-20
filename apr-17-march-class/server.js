@@ -23,7 +23,7 @@ function coursesHandler (req, res) {
 }
 app.get("/courses", coursesHandler);
 
-// get a particular course
+// get a particular course.
 app.get("/courses/:courseId", (req, res) => {
     // get the course id from the request parameters
     const requestedCourseId = req.params.courseId;
