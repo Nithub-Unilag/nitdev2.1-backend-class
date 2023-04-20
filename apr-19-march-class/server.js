@@ -3,17 +3,9 @@ const studentRouter = require('./routes/student');
 
 
 const app = express();
+app.use(express.json());
 
-// localhost:4000/pjk
-app.use((req,res,next) => {
-    console.log(req.url.toString());
-    next();
-})
-app.use('/api/', studentRouter);
-
-app.use("*", (req, res) => {
-    console.log(req)
-})
+app.use('/api/students', studentRouter);
 
 const PORT = 9000 || process.env.NODE_ENV
 app.listen(PORT, () => {

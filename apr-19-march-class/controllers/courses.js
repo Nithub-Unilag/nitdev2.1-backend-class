@@ -1,6 +1,6 @@
 
 
-class Courses {
+class CoursesController {
     constructor(){}
 
 

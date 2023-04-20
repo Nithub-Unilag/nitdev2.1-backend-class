@@ -7,7 +7,7 @@ class Student {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
-        this.matricNo = rand.randomBytes(10);
+        this.matricNo = rand.randomBytes(10).toString('hex');
     }
 
     getCourses(){
