@@ -1,3 +1,5 @@
 1. HttpStatus code
 [200, 201, 401,400,421,409,500]
-2.
+2. Database connection pooling
+3. Sql Injection. [https://owasp.org/www-community/attacks/SQL_Injection]
+4. Callbacks and Promises

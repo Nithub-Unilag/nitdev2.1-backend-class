@@ -4,16 +4,22 @@ const StudentModel = require("../models/student");
 class StudentController {
     constructor() {}
 
-    signUp(req, res) {
+    async signUp(req, res) {
         // firstname, lastname and email from the request.
         const { firstname, lastname, email } = req.body; // [object destructuring]
         // save the student to the db
         const newStudent = new StudentModel(firstname,lastname, email);
 
-        studentDb.push(newStudent);
-
-        // return all registered students.
-        res.status(201).send(studentDb);
+        try{
+            const result = await StudentModel.register(newStudent);
+            const answer = result[0][0];
+            res.status(201).json({ data: answer});
+            return
+        }catch(err){
+            res.json({ error: err.message});
+            return
+        }
+        
     }
 
     registerCourse(req, res) {
